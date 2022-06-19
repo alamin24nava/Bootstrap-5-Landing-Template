@@ -104,10 +104,10 @@
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
 		
-		$('.mobile-menu .menu-box').mCustomScrollbar();
+		$('.mobile-menu .mobile-menu-box').mCustomScrollbar();
 		
 		var mobileMenuContent = $('.main-header .nav-wrap .main-menu').html();
-		$('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
+		$('.mobile-menu .mobile-menu-box .theme-menu-outer').append(mobileMenuContent);
 		$('.sticky-header .main-menu').append(mobileMenuContent);
 		
 		//Dropdown Button
@@ -128,7 +128,7 @@
 		});
 
 		//Menu Toggle Btn
-		$('.mobile-menu .menu-backdrop,.mobile-menu .close-btn').on('click', function() {
+		$('.mobile-menu .theme-menu-backdrop,.mobile-menu .close-btn').on('click', function() {
 			$('body').removeClass('mobile-menu-visible');
 		});
 		
